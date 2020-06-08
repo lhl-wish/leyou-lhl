@@ -5,7 +5,7 @@ spring:
   application:
     name: item-service
   datasource:
-    url: jdbc:mysql://47.115.53.135:3306/leyou
+    url: jdbc:mysql:///leyou
     username: root
     password: root
 eureka:
