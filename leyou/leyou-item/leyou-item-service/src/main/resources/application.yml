@@ -5,7 +5,7 @@ spring:
   application:
     name: item-service
   datasource:
-    url: jdbc:mysql:///leyou
+    url: jdbc:mysql:///leyou?useUnicode=true&characterEncoding=UTF-8&zeroDateTimeBehavior=convertToNull
     username: root
     password: root
 eureka:
