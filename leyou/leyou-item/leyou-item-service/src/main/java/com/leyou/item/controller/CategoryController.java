@@ -39,4 +39,20 @@ public class CategoryController {
         return ResponseEntity.ok(categories);
     }
 
+    /**
+     * 根据id集合查询分类名称
+     * @param ids
+     * @return
+     */
+    @GetMapping
+    public ResponseEntity<List<String>> queryNamesByIds(@RequestParam("ids") List<Long> ids){
+        List<String> names = this.categoryService.queryNamesByIds(ids);
+        if(CollectionUtils.isEmpty(names)){
+            // 404：资源服务器未找到
+            return ResponseEntity.notFound().build();
+        }
+        // 200：查询成功
+        return ResponseEntity.ok(names);
+    }
+
 }

@@ -42,6 +42,11 @@ public class GoodsController {
         return ResponseEntity.ok(result);
     }
 
+    /**
+     * 新增商品
+     * @param spuBo
+     * @return
+     */
     @PostMapping("/goods")
     public ResponseEntity<Void> saveGoods(@RequestBody SpuBo spuBo){
         this.goodsService.saveGoods(spuBo);
