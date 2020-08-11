@@ -12,7 +12,6 @@ import org.springframework.web.multipart.MultipartFile;
 
 import javax.imageio.ImageIO;
 import java.awt.image.BufferedImage;
-import java.io.File;
 import java.io.IOException;
 import java.util.Arrays;
 import java.util.List;
@@ -56,7 +55,7 @@ public class UploadServiceImpl implements UploadService {
 
             // 返回url，进行回显
 //            return "http://image.leyou.com/" + originalFilename;
-            return "http://47.115.53.135/" + storePath.getFullPath();
+            return "http://192.168.174.38/" + storePath.getFullPath();
         } catch (IOException e){
             LOGGER.info("服务器内部错误: " + originalFilename);
             e.printStackTrace();

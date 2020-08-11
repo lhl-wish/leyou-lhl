@@ -41,4 +41,10 @@ public class GoodsHtmlServiceImpl implements GoodsHtmlService {
             }
         }
     }
+
+    @Override
+    public void deleteHtml(Long spuId) {
+        File file = new File("E:\\data\\3_8_leyou\\tools\\nginx-1.14.0\\html\\item\\" + spuId + ".html");
+        file.deleteOnExit();
+    }
 }

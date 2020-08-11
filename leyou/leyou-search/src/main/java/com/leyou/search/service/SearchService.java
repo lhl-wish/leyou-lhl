@@ -24,4 +24,15 @@ public interface SearchService {
      */
     public SearchResult search(SearchRequest searchRequest);
 
+    /**
+     * 根据spuid保存或更新
+     * @param id
+     */
+    void save(Long id) throws IOException;
+
+    /**
+     * 根据spuid删除
+     * @param id
+     */
+    void delete(Long id);
 }

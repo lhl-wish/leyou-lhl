@@ -7,9 +7,14 @@ spring:
   data:
     elasticsearch:
       cluster-name: elasticsearch
-      cluster-nodes: 47.115.53.135:9300
+      cluster-nodes: 192.168.174.38:9300
   jackson:
     default-property-inclusion: non_null #不包含为null的字段
+  rabbitmq:
+    host: 192.168.174.38
+    username: leyou
+    password: leyou
+    virtual-host: /leyou
 eureka:
   client:
     service-url:
