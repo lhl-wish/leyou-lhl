@@ -172,6 +172,11 @@ public class GoodsServiceImpl implements GoodsService {
         return this.spuMapper.selectByPrimaryKey(id);
     }
 
+    @Override
+    public Sku querySkuById(Long skuId) {
+        return this.skuMapper.selectByPrimaryKey(skuId);
+    }
+
     /**
      * 发送消息
      * @param type
