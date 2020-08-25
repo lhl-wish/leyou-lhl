@@ -16,6 +16,7 @@ zuul:
     user-service: /user/** # 路由到用户服务
     auth-service: /auth/** # 路由到授权微服务
     cart-service: /cart/** # 路由到购物车微服务
+    order-service: /order/** # 路由到订单微服务
   add-host-header: true # 携带请求本身的head头信息
   sensitive-headers:  #配置禁止使用的头信息，设置为null，否则set-cookie无效
 
